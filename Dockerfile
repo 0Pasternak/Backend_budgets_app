@@ -1,5 +1,5 @@
 # Usar la imagen base de Maven para compilar la aplicación
-FROM maven:3.8.6-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-17 AS build
 WORKDIR /app
 
 # Copiar el archivo pom.xml y descargar las dependencias
@@ -15,10 +15,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar el jar generado en la etapa de compilación
-COPY --from=build /app/target/tu-aplicacion.jar tu-aplicacion.jar
+COPY --from=build /app/target/backend-profile-renovation-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponer el puerto en el que la aplicación estará escuchando
 EXPOSE 8080
 
 # Comando para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "tu-aplicacion.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
