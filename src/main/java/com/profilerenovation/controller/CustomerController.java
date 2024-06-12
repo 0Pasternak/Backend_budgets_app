@@ -21,7 +21,7 @@ import com.profilerenovation.dto.CustomerDTO;
 import com.profilerenovation.entity.Customer;
 import com.profilerenovation.service.ICustomerService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = { "http://localhost:3000", "https://tpreformas.es" })
 @RestController
 @RequestMapping("/api/customer")
 public class CustomerController {

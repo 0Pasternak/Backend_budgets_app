@@ -30,7 +30,7 @@ import com.profilerenovation.service.IUserService;
 
 import jakarta.validation.Valid;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = { "http://localhost:3000", "https://tpreformas.es" })
 @RequestMapping("/auth")
 @RestController
 public class AuthController {

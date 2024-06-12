@@ -21,7 +21,7 @@ import com.profilerenovation.entity.BudgetTableLine;
 import com.profilerenovation.enums.LineType;
 import com.profilerenovation.service.IBudgetTableLineService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = { "http://localhost:3000", "https://tpreformas.es" })
 @RestController
 @RequestMapping("/api/budget")
 public class BudgetTableLineController {

@@ -20,7 +20,7 @@ import com.profilerenovation.entity.User;
 import com.profilerenovation.service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = { "http://localhost:3000", "https://tpreformas.es" })
 @RequestMapping("/api/user")
 public class UserController {
 

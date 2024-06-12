@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.profilerenovation.entity.Material;
 import com.profilerenovation.service.IMaterialService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = { "http://localhost:3000", "https://tpreformas.es" })
 @RestController
 @RequestMapping("/api/budget")
 public class MaterialController {

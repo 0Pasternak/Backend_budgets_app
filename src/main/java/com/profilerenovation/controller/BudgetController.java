@@ -21,7 +21,7 @@ import com.profilerenovation.entity.Budget;
 import com.profilerenovation.enums.BudgetStatus;
 import com.profilerenovation.service.IBudgetService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = { "http://localhost:3000", "https://tpreformas.es" })
 @RestController
 @RequestMapping("/api/budget")
 public class BudgetController {
