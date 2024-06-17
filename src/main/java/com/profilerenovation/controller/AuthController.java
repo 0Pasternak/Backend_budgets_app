@@ -52,7 +52,7 @@ public class AuthController {
             User user = new User();
             user.setUserName(userDto.getUserName());
             user.setEmail(userDto.getEmail());
-            user.setPassword(userDto.getPassword()); // La contraseña debe estar codificada en el servicio
+            user.setPassword(userDto.getPassword());
             user.setRole(userDto.getRole());
 
             userService.registerUser(user);
